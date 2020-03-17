@@ -6,4 +6,9 @@
     <title>Climbing Tracker</title>
 </head>
 <body>
-    
+
+@include('layout.navbar')
+
+@yield('content')
+
+@include('layout.footer')
