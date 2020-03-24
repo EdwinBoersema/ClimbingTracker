@@ -10,3 +10,6 @@ $factory->define(Area::class, function (Faker $faker) {
         //
     ];
 });
+
+
+$areaNames = ["Freyr", "", "", "", "", "", "", "", "", "", "", ""];
