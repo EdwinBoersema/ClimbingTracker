@@ -1,26 +1,21 @@
-<div class="">
-    <nav id="navbar">
-        <div class="top-right links">
-            @auth
-                <button class="nav-link">
-                    <a href="{{ url('/home') }}">Home</a>
-                </button>
+<nav class="navbar">
+    <div class="navbar-left">
+        <a class="nav-link" href="{{ url('/home') }}">Home</a>
+    </div>
 
-                <div>
-                    <form action="{{ route('logout') }}" method="post">
-                        <button type="submit">Logout</button>
-                        @csrf
-                    </form>
-                </div>
-            @else
-                <button class="nav-link">
-                    <a href="{{ route('login') }}">Login</a>
-                </button>
 
-                <button class="nav-link">
-                    <a href="{{ route('register') }}">Register</a>
-                </button>
-            @endauth
+    <div class="navbar-right">
+        @auth
+        <div>
+            <form action="{{ route('logout') }}" method="post">
+                <input class="nav-link" type="submit" value="Logout">
+                @csrf
+            </form>
         </div>
-    </nav>
-</div>
+        @else
+        <a class="nav-link" href="{{ route('login') }}">Login</a>
+
+        <a class="nav-link" href="{{ route('register') }}">Register</a>
+        @endauth
+    </div>
+</nav>
