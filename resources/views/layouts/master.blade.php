@@ -10,8 +10,8 @@
 </head>
 <body>
 
-@include('layout.navbar')
+@include('layouts.navbar')
 
 @yield('content')
 
-@include('layout.footer')
+@include('layouts.footer')
