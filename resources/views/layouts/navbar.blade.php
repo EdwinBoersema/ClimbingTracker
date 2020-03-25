@@ -1,17 +1,26 @@
 <div class="">
     <nav id="navbar">
-        @if (Route::has('login'))
         <div class="top-right links">
             @auth
-                <a href="{{ url('/home') }}">Home</a>
-            @else
-                <a href="{{ route('login') }}">Login</a>
+                <button class="nav-link">
+                    <a href="{{ url('/home') }}">Home</a>
+                </button>
 
-                @if (Route::has('register'))
+                <div>
+                    <form action="{{ route('logout') }}" method="post">
+                        <button type="submit">Logout</button>
+                        @csrf
+                    </form>
+                </div>
+            @else
+                <button class="nav-link">
+                    <a href="{{ route('login') }}">Login</a>
+                </button>
+
+                <button class="nav-link">
                     <a href="{{ route('register') }}">Register</a>
-                @endif
+                </button>
             @endauth
         </div>
-    @endif
     </nav>
 </div>
