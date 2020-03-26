@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <h1>Welcome Page</h1>
+    <div id="homepageDiv">
+        <h1 id="welcomeTitle">Climbing Tracker</h1>
+    </div>
 @endsection
