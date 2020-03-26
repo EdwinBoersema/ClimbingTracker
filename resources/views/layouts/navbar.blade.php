@@ -1,6 +1,10 @@
-<nav class="navbar">
+<nav id="navbar">
     <div class="navbar-left">
+        <a class="nav-link" href=" {{ url('/') }}">
+            <span id="nav-title">CT</span>
+        </a>
         <a class="nav-link" href="{{ url('/home') }}">Home</a>
+        <a class="nav-link" href="{{ url('/area') }}">Areas</a>
     </div>
 
 

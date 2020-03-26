@@ -17,4 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+// User Home Routes
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Area Routes
+Route::get('/area', 'AreaController@index')->name('area');

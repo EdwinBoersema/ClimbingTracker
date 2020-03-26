@@ -31,7 +31,7 @@ body {
     font-family: var(--font-family-mono);
 }
 
-#homepageDiv {
+#welcomepageDiv {
     background: url('../images/globals/welcomepage.jpg') center no-repeat;
     height: 50vh;
 }
@@ -43,6 +43,8 @@ body {
     color: var(--gray-dark);
 }
 
+
+/* container styling */
 .container {
     width: 100%;
     padding-right: 15px;
@@ -75,18 +77,28 @@ body {
     }
 }
 
-.navbar {
+/* navbar classes styling */
+
+#navbar {
     background-color: var(--dark-green);
     width: 100%;
     padding-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.navbar-left {
+    display: flex;
 }
 
 .navbar-right {
     display: flex;
-    justify-self: end;
-    flex-wrap: wrap;    
+}
+
+#nav-title {
+    font-size: large;
 }
 
 .nav-link {
