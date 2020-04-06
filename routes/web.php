@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // Area Routes
 Route::get('/area', 'AreaController@index')->name('area');
+Route::get('/area/create', 'AreaController@create')->name('area');
+Route::post('/area/create', 'AreaController@create')->name('area');

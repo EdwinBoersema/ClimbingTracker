@@ -18,6 +18,9 @@ class CreateRouteUserTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('route_id');
+            $table->boolean('onsight')->default(0);
+            $table->boolean('flash')->default(0);
+            $table->boolean('redpoint')->default(0);
             $table->timestamps();
 
             $table->unique(['user_id', 'route_id']);

@@ -17,7 +17,7 @@ class CreateRoutesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name')->unique();
             $table->smallInteger('difficulty');
-            $table->boolean('active');
+            $table->boolean('active')->default(1);
             $table->unsignedBigInteger('area_id');
             $table->timestamps();
 
