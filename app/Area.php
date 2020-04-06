@@ -11,7 +11,13 @@ class Area extends Model
      *
      * @var array
      */
-    protected $fillable = [
+    protected $fillable = 
+    [
         'name', 'location'
     ];
+
+    public function routes()
+    {
+        return $this->hasMany(Route::class);
+    }
 }

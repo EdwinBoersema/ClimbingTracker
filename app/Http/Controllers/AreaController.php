@@ -14,7 +14,10 @@ class AreaController extends Controller
      */
     public function index()
     {
-        return view('areas/index');
+        $area = App\User::all();
+        return view('area/index', [
+            $area => 'area',
+        ]);
     }
 
     /**
@@ -25,6 +28,7 @@ class AreaController extends Controller
     public function create()
     {
         //
+        return view('area/create');
     }
 
     /**
@@ -46,7 +50,10 @@ class AreaController extends Controller
      */
     public function show(Area $area)
     {
-        //
+
+        return view('area/show', [
+
+        ]);
     }
 
     /**

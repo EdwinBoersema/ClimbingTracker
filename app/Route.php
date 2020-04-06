@@ -14,4 +14,14 @@ class Route extends Model
     protected $fillable = [
         'name', 'difficulty', 'area_id',
     ];
+
+    public function area()
+    {
+        return $this->belongsTo(Area::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsToMany(User::class);
+    }
 }
