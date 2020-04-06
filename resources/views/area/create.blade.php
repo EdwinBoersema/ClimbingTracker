@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-    Area Index Page
+    Create area page
 @endsection
