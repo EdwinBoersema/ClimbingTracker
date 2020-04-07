@@ -14,7 +14,7 @@ class RouteController extends Controller
      */
     public function index()
     {
-        //
+        return view('route/index');
     }
 
     /**
@@ -24,7 +24,7 @@ class RouteController extends Controller
      */
     public function create()
     {
-        //
+        return view('route/create');
     }
 
     /**
@@ -46,7 +46,7 @@ class RouteController extends Controller
      */
     public function show(Route $route)
     {
-        //
+        return view('route/show');
     }
 
     /**
@@ -57,7 +57,7 @@ class RouteController extends Controller
      */
     public function edit(Route $route)
     {
-        //
+        return view('route/edit');
     }
 
     /**

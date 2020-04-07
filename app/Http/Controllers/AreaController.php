@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Area;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class AreaController extends Controller
@@ -14,9 +15,8 @@ class AreaController extends Controller
      */
     public function index()
     {
-        $area = App\User::all();
         return view('area/index', [
-            $area => 'area',
+            'area' => Area::all(),
         ]);
     }
 
@@ -42,19 +42,19 @@ class AreaController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Area  $area
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Area $area)
-    {
+    // /**
+    //  * Display the specified resource.
+    //  *
+    //  * @param  \App\Area  $area
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function show(Area $area)
+    // {
 
-        return view('area/show', [
+    //     return view('area/show', [
 
-        ]);
-    }
+    //     ]);
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -64,7 +64,7 @@ class AreaController extends Controller
      */
     public function edit(Area $area)
     {
-        //
+        return view('area/edit');
     }
 
     /**

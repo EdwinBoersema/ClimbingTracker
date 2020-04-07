@@ -40,6 +40,6 @@ class User extends Authenticatable
 
     public function routes()
     {
-        return this->belongsToMany(Route::class);
+        return $this->belongsToMany(Route::class);
     }
 }
