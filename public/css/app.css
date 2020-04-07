@@ -31,6 +31,18 @@ body {
     font-family: var(--font-family-mono);
 }
 
+a {
+    color: var(--gray-dark);
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
 #welcomepageDiv {
     background: url('../images/globals/welcomepage.jpg') center no-repeat;
     height: 50vh;
@@ -110,4 +122,18 @@ body {
 
 .nav-link:hover {
     color: var(--highlight);
+}
+
+/* Cards */
+
+.card {
+    color: var(--gray-dark);
+    padding: 0.5rem;
+    margin: 1rem 10% 0 10%;
+    border: 1px solid var(--light-green);
+    border-radius: 0.5em;
+}
+
+.card:hover {
+    color: var(--secondary);
 }

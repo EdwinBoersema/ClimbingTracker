@@ -6,7 +6,13 @@
 <div>
     Area's:
     @foreach ($area as $area)
-    <div>{{ $area->name }}</div>
+    <div class="card">
+        <a href="{{ route('route.index', ['name' => $area->name]) }}">
+            <h2>{{ $area->name }}</h2>
+            <div>Location: {{ $area->location }}</div>
+            <div>{{ $area->description }}</div>
+        </a>
+    </div>
     @endforeach
 </div>
 
