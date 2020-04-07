@@ -17,6 +17,8 @@ class CreateAreasTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('location');
+            $table->string('description');
+            $table->string('image')->default('none');
             $table->timestamps();
         });
     }

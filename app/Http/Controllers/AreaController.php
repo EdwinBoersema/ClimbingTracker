@@ -39,7 +39,14 @@ class AreaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $area = new Area;
+        $area->name = $request->name;
+        $area->location = $request->location;
+        $area->description = $request->description;
+        // $area->image = $request->image;
+        $area->save();
+
+        return redirect(route('area.index'));
     }
 
     // /**
